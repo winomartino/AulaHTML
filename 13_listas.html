@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>listas</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wino" />
+    <meta name="description" content="lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, tech, internet" />
+ 
+    <style>
+
+        li ol{
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s; 
+        }
+
+        li:hover{
+            background: #ccc;
+        }
+        li:hover ol{
+            height: 65px;
+        }
+    </style>
+</head> 
+  <body>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2
+            <ol>
+                <li>item 2.1</li>
+                <li>item 2.2</li>
+                <li>item 2.3</li>
+            </ol>
+        </li>
+        <li>item 3</li>
+    </ul>
+
+    <hr>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação de hipertexto</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagem para criação de folhas de estilo</dd>
+    </dl>
+
+    <hr>
+
+    <dl>
+        <dt>www</dt>
+        <dt>internet</dt>
+        <dd>rede mundial de computadores</dd>
+
+        <dt>javascript</dt>
+        <dt>linguagem de script para internet</dt>
+        <dd>script para rodar em browser</dd>
+
+  </body>
+</html>
