@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>transition</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wino" />
+    <meta name="description" content="lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, tech, internet" />
+  </head>
+
+    <style>
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            
+            transition-property: width, height;
+            transition-duration: .7s, 1.4s;
+            transition-timing-function: cubic-bezier(.67,-0.38,.5,1.5);
+            transition-delay: .2;
+        }
+
+        div:hover{
+            width: 400px;
+            height: 400px;
+        }
+
+    </style>
+
+  <body>
+    <h1>estrutura basica</h1>
+
+    <div>1</div>
+  </body>
+</html>
