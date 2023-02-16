@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>form login</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wino" />
+    <meta name="description" content="lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, tech, internet" />
+
+    <style>
+
+        body{
+            font-family: sans-serif; 
+            font-size: 18px;
+        }
+
+        .formlogin {
+            width: 250px;
+            margin: 50px auto 0;
+        }
+
+        .formlogin label{
+            display: block;
+            margin-top: 20px;
+        }
+
+        .formlogin fieldset{
+            background: #ccc;
+        }
+        .formlogin legend{
+            background: white;
+            display: inline-block;
+            padding: 10px;
+        }
+
+
+        #user, #pass, .btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;  
+            padding: 15px;
+            border: none;
+        }
+
+        #user:focus, #pass:focus{
+            background-color: #ddd;
+        }
+
+        .btn{
+            margin-top: 15px;            
+        }
+
+        #user{
+            margin-bottom: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>exemplo de forms</h1>
+
+    <form action="#" method="post" class="formlogin">
+        <fieldset>
+            <legend>login</legend>
+            <label for="user">Digite o seu usuario</label>
+            <input type="text" name="text" id="user" autofocus>
+            <label  for="pass">Digite a senha</label>
+            <input type="password" name="pass" id="pass">
+            <input type="submit" value="login" class="btn"/>
+        </fieldset>
+    </form>
+  </body>
+</html>

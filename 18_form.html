@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>form login</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wino" />
+    <meta name="description" content="lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, tech, internet" />
+
+  </head>
+  <body>
+    <h1>exemplo de forms</h1>
+
+    <form action="#" method="post" class="formlogin">
+        
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+           
+            <label>Email</label> 
+           <input type="email" required maxlength="4" placeholder="example@anymail.com">
+           
+           <br>
+           
+           <label>numero de filhos</label>
+           <input type="number" min="0" max="100">
+
+           <br>
+
+           <label>renda familiar</label>
+           <input type="number" min="0" step="0.5">
+           
+           <br>
+
+           <label>nascimento</label>
+           <input type="date" min="2023-02-16" max="2143-02-16">
+
+           <p>Sexo:</p>
+            <label>
+                masculino
+                <input type="radio" name="sexo" value="M">
+            </label>
+
+            <label>
+                feminino
+                <input type="radio" name="sexo"value="F">
+            </label>
+           
+           <br>
+           <input type="hidden" name="expira" value="2023-10-20"
+
+            <label>Estado</label>
+            <select name="estado">
+                <option value="0">Selecione</option>
+                <option value="SP">São Paulo</option>                    
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Área de interesse</legend>
+            
+            <label>
+                <input type="checkbox" name="html" value="html">
+                HTML
+            </label>
+
+            <label>
+                <input type="checkbox" name="JS" value="JS">
+                Javascript
+            </label>
+
+            <label>
+                <input type="checkbox" name="CSS" value="CSS">
+                CSS
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea style="resize: none;" name="msg" cols="30" rows="10" maxlength="50"></textarea>
+
+            <textarea style="resize: none;" name="contrato" cols="30" rows="10" disabled> Aqui entra o texto do contrato que precisa ser aceito</textarea>
+            <label><input type="checkbox" checked>Li e aceito</label>
+
+            <input type="range" min="0" max="10" step=".5">
+            <input type="time">
+            <input type="color">
+
+            <select>
+                <option>opçao 1</option>
+                <option>opçao 2</option>
+                <option>opçao 3</option>
+                <option>opçao 4</option>
+                <option>opçao 5</option>
+            </select>
+
+            <select multiple>
+                <option>opçao 1</option>
+                <option>opçao 2</option>
+                <option>opçao 3</option>
+                <option>opçao 4</option>
+                <option>opçao 5</option>
+            </select>
+
+            <select size="3">
+                <option>opçao 1</option>
+                <option>opçao 2</option>
+                <option>opçao 3</option>
+                <option>opçao 4</option>
+                <option>opçao 5</option>
+            </select>
+        </fieldset>
+            
+            <br>
+            <input type="submit" value="mandar">   
+            <input type="button" value="button (trata com Javascript)"> 
+            <input type="reset" value="limpar formulário">      
+
+
+    </form>
+  </body>
+</html>
