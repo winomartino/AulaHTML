@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>box-shadow</title>
+    <title>graphic design is my passion</title>
     <meta charset="utf-8" />
     <meta name="author" content="Wino" />
     <meta name="description" content="lista de documentos" />
@@ -9,6 +9,24 @@
   </head>
 
   <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: red;
+      background-image: linear-gradient(
+          to top,
+          red 400px,
+          blue,
+          rgba(0, 0, 0, 0.5) 500px
+        ),
+        url(thumbs/bg.jpg);
+      background-size: auto, 100%, 100%;
+    }
 
     #radius {
       background-color: orange;
@@ -17,26 +35,21 @@
       margin: 50px auto;
       border-radius: 50px 100px / 100px 50px;
 
-      box-shadow: 
-        15px 5px 2px -10px #999, 
-        10px 10px 0 red, 
-        -10px -10px 0 blue;
+      box-shadow: 15px 5px 2px -10px #999, 10px 10px 0 red, -10px -10px 0 blue;
     }
 
     h1 {
       font-family: sans-serif;
       font-size: 55px;
       text-align: center;
-      text-shadow: 
-        -1px 1px 0 #5d5d5d, 
-        -2px 3px 0 #727272, 
-        -3px 3px 0 #868686,
+      text-shadow: -1px 1px 0 #5d5d5d, -2px 3px 0 #727272, -3px 3px 0 #868686,
         -4px 4px 0 #a3a3a3;
+      color: white;
     }
   </style>
 
   <body>
-    <h1>CSS efeitos</h1>
+    <h1>graphic design in my passion</h1>
 
     <div id="radius"></div>
   </body>
