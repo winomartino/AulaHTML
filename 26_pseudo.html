@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>pagina de exemplo de estrutura basica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wino" />
+    <meta name="description" content="lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia, tech, internet" />
+
+    <style>
+        input[type="checkbox"] {
+            border: 2px solid red;
+            width: 25px;
+            height: 25px;
+            
+        }
+        input[type="checkbox"]:checked {
+            border: 2px solid red;
+            width: 50px;
+            height: 50px;
+           
+        }
+
+        button:disabled{
+            background: blue;
+            color: white;
+        }
+
+        p{
+            color: red;
+        }
+
+        p:empty:before{
+            content: "paragrafo vazio preenchido no css";
+        } 
+
+        input[type="text"]:focus{
+            background: #e3e3e3;
+        }
+
+        a:focus, a:hover div:focus{
+            background: red;
+        }
+
+        input::placeholder{
+            color:blue;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    
+    <label><input type="checkbox" value="sim">Aceito o contrato</label>
+
+    <button>vai</button>
+    <button disabled>vai2</button>
+
+    <p>paragrafo 1</p>
+    <p> </p>
+    <p></p><!--com espaço vai, sem não!-->
+
+    <hr>
+
+    <input type="text">
+    <input type="text" value="valor inicial">
+    <input type="text" value="valor inicial" readonly>
+    <input type="text" value="valor inicial" disabled>
+    <input type="text" placeholder="valor do placeholder" readonly>
+
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+    </ul>
+
+    <div tabindex="1">div1</div>
+    <div tabindex="2">div2</div>
+    <div tabindex="3">div3</div>
+
+  </body>
+</html>
