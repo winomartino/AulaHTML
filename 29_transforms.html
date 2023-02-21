@@ -6,8 +6,191 @@
     <meta name="author" content="Wino" />
     <meta name="description" content="lista de documentos" />
     <meta name="keywords" content="html5, tecnologia, tech, internet" />
+  
+    <style>
+
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .div1{
+            width: 150px;
+            height: 50px;
+            background: red;
+            transform: translate(50%, 50%); /* primeiro x dps o y */
+        }
+
+        .div2{
+            width: 150px;
+            height: 50px;
+            background: blue;
+            position: relative;
+            left: 50%;
+        }
+
+        .div3{
+            width: 50%;
+            overflow: hidden;
+            border: solid 1.5px black;
+        }
+
+        .div3-internal{
+            background: yellow;
+            transform: translateX(80%, 25px);
+        }
+
+        .div4{
+            width: 50%;
+            overflow: hidden;
+            border: solid 1.5px black;
+        }
+
+        .div4-internal{
+            background: yellow;
+            transform: rotate(45deg);
+        }
+
+        .div5{
+            width: 50%;
+            overflow: hidden;
+            border: solid 1.5px black;
+        }
+
+        .div5-internal{
+            background: yellow;
+            transform: rotate(20deg);
+            transform-origin:left top ;
+        }
+
+        .div6{
+            width: 50%;
+            overflow: hidden;
+            border: solid 1.5px black;
+        }
+
+        .div6-internal{
+            background: yellow;
+            transform: rotate(30deg) translate(30px);
+        }
+
+        .div7{
+            width: 50%;
+            overflow: hidden;
+            border: solid 1.5px black;
+        }
+
+        .div7-internal{
+            background: yellow;
+            transform: translate(30px) rotate(30deg);
+        }
+
+        .div8{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transform: skew(10deg, 30deg);
+
+        }
+
+        .div9{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            transform: scale(.5) translateX(50%);
+            transition: cubic-bezier(.37,-0.04,.72,1.65);
+        }
+
+        .div9:hover{
+            transform: scale(2);
+
+        }
+
+
+
+    </style>
+
   </head>
   <body>
-    <h1>estrutura basica</h1>
+   
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <hr>
+    <div class="div3">
+        <div class="div3-internal">conteudo qualquer123</div>
+
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        est soluta, aperiam neque dolorum aliquid ea unde rem 
+        commodi ipsa numquam, ex adipisci id et culpa voluptates 
+        perferendis sed! Laborum, dolorum quas maiores consectetur 
+        porro vero deleniti nam deserunt fugit alias.
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div4">
+        <div class="div4-internal">conteudo qualquer123</div>
+
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        est soluta, aperiam neque dolorum aliquid ea unde rem 
+        commodi ipsa numquam, ex adipisci id et culpa voluptates 
+        perferendis sed! Laborum, dolorum quas maiores consectetur 
+        porro vero deleniti nam deserunt fugit alias.
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div5">
+        <div class="div5-internal">conteudo qualquer123</div>
+
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        est soluta, aperiam neque dolorum aliquid ea unde rem 
+        commodi ipsa numquam, ex adipisci id et culpa voluptates 
+        perferendis sed! Laborum, dolorum quas maiores consectetur 
+        porro vero deleniti nam deserunt fugit alias.
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div6">
+        <div class="div6-internal">conteudo qualquer123</div>
+
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        est soluta, aperiam neque dolorum aliquid ea unde rem 
+        commodi ipsa numquam, ex adipisci id et culpa voluptates 
+        perferendis sed! Laborum, dolorum quas maiores consectetur 
+        porro vero deleniti nam deserunt fugit alias.
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div7">
+        <div class="div7-internal">conteudo qualquer123</div>
+
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        est soluta, aperiam neque dolorum aliquid ea unde rem 
+        commodi ipsa numquam, ex adipisci id et culpa voluptates 
+        perferendis sed! Laborum, dolorum quas maiores consectetur 
+        porro vero deleniti nam deserunt fugit alias.
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div8">div 8</div>
+    <div class="div9">div 9</div>
+
+
+
   </body>
 </html>
