@@ -38,6 +38,11 @@
             background: #e3e3e3;
         }
 
+        input[type="text"]:read-only{
+            background: yellow;
+        }
+
+
         a:focus, a:hover div:focus{
             background: red;
         }
@@ -64,9 +69,9 @@
 
     <input type="text">
     <input type="text" value="valor inicial">
-    <input type="text" value="valor inicial" readonly>
+    <input type="text" value="valor inicial" read-only>
     <input type="text" value="valor inicial" disabled>
-    <input type="text" placeholder="valor do placeholder" readonly>
+    <input type="text" placeholder="valor do placeholder">
 
     <ul>
         <li><a href="#">link falso</a></li>
